@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 with Owl Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+
+  #example1 {
+    position: relative;
+    border: 1px solid black;
+    padding: 25px;
+    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .icon-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 300px !important;
+  color: white;
+  font-weight: 100;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  /* Style your icon here (size, color, etc.) */
+}
+
+.button {
+
+  color: antiquewhite;
+  background-color: rgba(1, 94, 63, 0.5);
+  border: none;
+  font-size: 20px;
+  padding: 30px 30px 30px 30px;
+  transition: 0.6s;
+}
+
+.button:hover {
+
+  color: antiquewhite;
+  background-color: rgb(1, 94, 63);
+  border: none;
+  font-size: 20px;
+  padding: 30px 30px 30px 30px;
+
+
+}
+
+p{
+  font-family: jost;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: jost;
+  font-size: 60px;
+}
+
+
+
+@media (min-width: 600px) {
+  #example1 {
+    border: 1px solid black;
+    padding: 25px;
+    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .card {
+    width: 18rem !important;
+  }
+}
+
+@media (min-width: 900px) {
+  #example1 {
+    border: 1px solid black;
+    padding: 25px;
+    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .card {
+    width: 25rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #example1 {
+    border: 1px solid black;
+    padding: 25px; /* This will override the 50px padding for larger screens */
+    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+
+  .card {
+    width: 25rem !important;
+  }
+}
+
+ </style>
+
+
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="owl-carousel owl-theme owl-carousel1">
+        <!-- Your carousel items will go here -->
+        <div class="item"><img src="assest/images/img-75-683x1024.jpg" alt="Image 1"></div>
+        <div class="item"><img src="assest/images/img-76-550x824.jpg" alt="Image 2"></div>
+        <div class="item"><img src="assest/images/img-77-1-550x824.jpg" alt="Image 3"></div>
+        <div class="item"><img src="assest/images/img-78-1-550x825.jpg" alt="Image 4"></div>
+        <div class="item"><img src="assest/images/img-81.jpg" alt="Image 5"></div>
+        <div class="item"><img src="assest/images/img-82-682x1024.jpg" alt="Image 6"></div>
+        <div class="item"><img src="assest/images/img-84.jpg" alt="Image 7"></div>
+        <div class="item"><img src="assest/images/lisha-riabinina-stj-A6E6II8-unsplash-550x825.jpg" alt="Image 8"></div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid">
+
+    <div id="example1">
+      <i class="fa fa-play-circle-o icon-center" aria-hidden="true"></i>
+    </div>
+       
+    <div class="row mt-5 p-5">
+      <div class="col-md-8 col-sm-8 col-xs-12">
+        <p>ENJOY WORLD-CLASS STAY EXPERIENCE</p>  
+        <h1> The Accommodations</h1>
+      </div>
+      <div class="col-md-3 col-sm-8 col-xs-12">
+        <button class="button"style="float:right;">Discover All Suites</button>
+      </div>
+    </div>
+    
+</div>
+
+
+
+<div class="container mt-5">
+  <div class="owl-carousel owl-theme owl-carousel2">   
+
+    <div class="card item" >
+      <img class="card-img-top" src="assest/images/room/20191019-160828-largejpg.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+     
+
+    <div class="card item" >
+      <img class="card-img-top" src="assest/images/room/hotel-wild-air (1).jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+
+    <div class="card item" >
+      <img class="card-img-top" src="assest/images/room/hotel-wild-air (2).jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+
+    <div class="card item" >
+      <img class="card-img-top" src="assest/images/room/hotel-wild-air (3).jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+
+   
+      
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.owl-carousel1').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive:{
+      0:{
+        items: 2
+      },
+      600:{
+        items: 2
+      },
+      1000:{
+        items: 4
+      }
+    }
+  });
+  $('.owl-carousel2').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1200: {
+        items: 3
+      }
+    }
+  });
+});
+
+
+
+</script>
+</body>
+</html>
