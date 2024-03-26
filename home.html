@@ -1,596 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap 5 with Owl Carousel</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
- <style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 300px) {
-  #example1 {
-    position: relative;
-    padding: 25px;
-    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
-    background-size: cover;
-    height: 300px;
-  }
-
-  .eleimage {
-  position: relative;  
-  width: 100%; 
-  height: 200px; 
-  background-image: url('assest/images/elephants.png'); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-}
-
-
-
-.card {
-    width: 20rem !important;
-    align-items: center;
-  }
-
-  .card-img-top {
-    height: 250px;
-  }
-
-  .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.eleimagetext{
-  font-size: 15px;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-}
-
-
-@media (min-width: 600px) {
-  #example1 {
-    padding: 25px;
-    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
-    background-size: cover;
-    height: 300px;
-  }
-
-  .card {
-    width: 18rem !important;
-  }
-
-  
-  .card-img-top {
-     height: 300px !important;
-}
-
-
-.eleimage{
-position: relative;  
-border: 1px solid black;
-padding: 25px;
-background: url('assest/images/elephants.png') no-repeat;
-background-size: cover;
-height: 400px;
-}
-
-.eleimagetext{
-  font-size: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-
-}
-
-
-@media (min-width: 900px) {
-  #example1 {
-    padding: 25px;
-    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
-    background-size: cover;
-    height: 300px;
-  }
-
-  .card {
-    width: 25rem !important;
-  }
-
-  .eleimage{
-position: relative;    
-border: 1px solid black;
-padding: 25px;
-background: url('assest/images/elephants.png') no-repeat;
-background-size: cover;
-height: 400px;
-}
-
-.eleimagetext{
-  font-size: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-
-}
-
-
-
-@media (min-width: 1200px) {   
-  #example1 {
-    padding: 25px; /* This will override the 50px padding for larger screens */
-    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
-    background-size: cover;
-    height: 700px;
-  }
-
-
-  .eleimage{
-position: relative;
-border: 1px solid black;
-padding: 25px;
-background: url('assest/images/elephants.png') no-repeat;
-background-size: cover;
-height: 600px;
-}
-
-
-.eleimagetext{
-  font-size: 40px;
-}
-
-
-}
-
-
-@media (min-width: 2000px) {   
-  #example1 {
-    padding: 25px; /* This will override the 50px padding for larger screens */
-    background: url('https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg') no-repeat;
-    background-size: cover;
-    height: 700px;
-  }
-
-
-  .eleimage{
-position: relative;
-padding: 25px;
-background: url('assest/images/elephants.png') no-repeat;
-background-size: cover;
-height: 800px;
-}
-
-
-}
-
-
-.eleimage::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.61); /* Adjust the overlay color and opacity here */
-  }
-
-
-
-
-
-
-
-
-.container-fluid-no-margin {
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-
-  .icon-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 300px !important;
-  color: white;
-  font-weight: 100;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  /* Style your icon here (size, color, etc.) */
-}
-
-.button {
-
-  color: antiquewhite;
-  background-color: rgba(1, 94, 63, 0.5);
-  border: none;
-  font-size: 20px;
-  padding: 20px 20px 20px 20px;
-  transition: 0.6s;
-}
-
-.button:hover {
-
-  color: antiquewhite;
-  background-color: rgb(1, 94, 63);
-  border: none;
-  font-size: 20px;
-  padding: 22px 22px 22px 22px;
-
-
-}
-
-p{
-  font-family: jost;
-  font-size: 15px;
-}
-
-h1 {
-  font-family: jost;
-  font-size: 60px;
-}
-
-.card h2 {
-    font-family: jost;
-    font-weight: 200; 
-  }
-
-  .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.icon {
-    margin-right: 10px; /* Adjust margin as needed */
-}
-
-
-/* card image hover effect*/
-
-.card-item {
-    position: relative;
-    overflow: hidden; /* Ensure the overflow is hidden to contain the zoom effect */
-  }
-
-  .card-item .card-img-top {
-    transition: transform 0.5s ease; /* Add transition for smooth zoom effect */
-  }
-
-  .card-item:hover .card-img-top {
-    transform: scale(1.05); /* Increase the scale on hover */
-  }
-
-
-
-
-
-
-
-
-
-
-/* learn more button css*/
-
-.animated-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 16px 36px;
-  border: 4px solid;
-  border-color: transparent;
-  font-size: 16px;
-  background-color: white;
-  border-radius: 100px;
-  font-weight: 600;
-  color: #026b25;
-  box-shadow: 0 0 0 2px #ffffff;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button svg {
-  position: absolute;
-  width: 24px;
-  fill: #004d17;
-  z-index: 9;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .arr-1 {
-  right: 16px;
-}
-
-.animated-button .arr-2 {
-  left: -25%;
-}
-
-.animated-button .circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: #ecf7f6;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button .text {
-  position: relative;
-  z-index: 1;
-  transform: translateX(-12px);
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.animated-button:hover {
-  box-shadow: 0 0 0 12px transparent;
-  color: #212121;
-  border-radius: 12px;
-}
-
-.animated-button:hover .arr-1 {
-  right: -25%;
-}
-
-.animated-button:hover .arr-2 {
-  left: 16px;
-}
-
-.animated-button:hover .text {
-  transform: translateX(12px);
-}
-
-.animated-button:hover svg {
-  fill: #004d0a;
-}
-
-.animated-button:active {
-  scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
-}
-
-.animated-button:hover .circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
-
-
-
-
- </style>
-
-
-
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-<div class="container mt-5">
-    <div class="owl-carousel owl-theme owl-carousel1">
-        <!-- Your carousel items will go here -->
-        <div class="item"><img src="assest/images/img-75-683x1024.jpg" alt="Image 1"></div>
-        <div class="item"><img src="assest/images/img-76-550x824.jpg" alt="Image 2"></div>
-        <div class="item"><img src="assest/images/img-77-1-550x824.jpg" alt="Image 3"></div>
-        <div class="item"><img src="assest/images/img-78-1-550x825.jpg" alt="Image 4"></div>
-        <div class="item"><img src="assest/images/img-81.jpg" alt="Image 5"></div>
-        <div class="item"><img src="assest/images/img-82-682x1024.jpg" alt="Image 6"></div>
-        <div class="item"><img src="assest/images/img-84.jpg" alt="Image 7"></div>
-        <div class="item"><img src="assest/images/lisha-riabinina-stj-A6E6II8-unsplash-550x825.jpg" alt="Image 8"></div>
-
-    </div>
-
-</div>
-
-
-<div class="container-fluid text-center">
-
-    <div id="example1">
-      <i class="fa fa-play-circle-o icon-center" aria-hidden="true"></i>
-    </div>
-       
-    <div class="row mt-5 p-5">
-      <div class="col-md-8 col-sm-8 col-xs-12">
-        <p>ENJOY WORLD-CLASS STAY EXPERIENCE</p>  
-        <h1> The Accommodations</h1>
-      </div>
-      <div class="col-md-3 col-sm-8 col-xs-12 text-center">
-        <button class="button">Discover All Suites</button>
-      </div>
-    </div>
-    
-</div>
-
-
-
-<div class="container mt-5 text-center">
-  <div class="owl-carousel owl-theme owl-carousel2 ">   
-
-
-    <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto" >
-      <img class="card-img-top" src="assest/images/room/20191019-160828-largejpg.jpg"  alt="Card image cap">
-      <div class="card-body">
-        <h2>Premier Oceanview Villa</h2>
-        <p>
-          <span class="icon"><i class="fa fa-window-maximize" aria-hidden="true"></i>  84 m <sup>2</sup> </span> 
-          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span>
-          <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span>
-      </p>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-        <button class="animated-button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-          <span class="text">Learn More</span>
-          <span class="circle"></span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-        </button>
-        
-        
-      </div>
-    </div>
-     
-
-    <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto">
-      <img class="card-img-top" src="assest/images/room/hotel-wild-air (1).jpg"  alt="Card image cap">
-      <div class="card-body">
-          <h2>Premier Oceanview Villa</h2>
-          <p>
-              <span class="icon"><i class="fa fa-window-maximize" aria-hidden="true"></i>  84 m <sup>2</sup> </span> 
-              <span class="icon"><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span>
-              <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span>
-          </p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-          <button class="animated-button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
-            <span class="text">Learn More</span>
-            <span class="circle"></span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-              ></path>
-            </svg>
-          </button>
-
-      </div>
-  </div>
-  
-
-    <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto" >
-      <img class="card-img-top" src="assest/images/room/hotel-wild-air (2).jpg"  alt="Card image cap">
-      <div class="card-body">
-        <h2>Premier Oceanview Villa</h2>
-        <p>
-          <span class="icon"><i class="fa fa-window-maximize" aria-hidden="true"></i>  84 m <sup>2</sup> </span> 
-          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span>
-          <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span>
-      </p>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-        <button class="animated-button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-          <span class="text">Learn More</span>
-          <span class="circle"></span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-        </button>
-
-      </div>
-    </div>
-
-
-    <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto" >
-      <img class="card-img-top" src="assest/images/room/hotel-wild-air (3).jpg"  alt="Card image cap">
-      <div class="card-body">
-        <h2>Premier Oceanview Villa</h2>
-        <p>
-          <span class="icon"><i class="fa fa-window-maximize" aria-hidden="true"></i>  84 m <sup>2</sup> </span> 
-          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span>
-          <span class="icon"><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span>
-      </p>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-        <button class="animated-button">
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-          <span class="text">Learn More</span>
-          <span class="circle"></span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
-            <path
-              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-            ></path>
-          </svg>
-        </button>
-
-      </div>
-    </div>
-
-
-   
+  <head>
+    <title>Bootstrap 5 with Owl Carousel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      @media (min-width: 300px) {
+        #example1 {
+          position: relative;
+          padding: 25px;
+          background: url("https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg")
+            no-repeat;
+          background-size: cover;
+          height: 300px;
+        }
+
+        .eleimage {
+          position: relative;
+          width: 100%;
+          height: 200px;
+          background-image: url("assest/images/elephants.png"); /* Replace with your image path */
+          background-size: cover;
+          background-position: center;
+        }
+
+        .card {
+          width: 19rem;
+          align-items: center;
+        }
+
+        .card-img-top {
+          height: 250px;
+        }
+
+        .card-body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .eleimagetext {
+          font-size: 15px;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+
+        .forestimg{
+          height: 205px;
+        }   
+      }
+
+      @media (min-width: 600px) {
+        #example1 {
+          padding: 25px;
+          background: url("https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg")
+            no-repeat;
+          background-size: cover;
+          height: 300px;
+        }
+
+        .card {
+          width: 18rem !important;
+        }
+
+        .card-img-top {
+          height: 300px !important;
+        }
+
+        .eleimage {
+          position: relative;
+          border: 1px solid black;
+          padding: 25px;
+          background: url("assest/images/elephants.png") no-repeat;
+          background-size: cover;
+          height: 400px;
+        }
+
+        .eleimagetext {
+          font-size: 25px;
+          margin-left: 10%;
+          margin-right: 10%;
+        }
       
+        .forestimg{
+          height: 265px;
+        } 
+      }
 
-  </div>
+      @media (min-width: 900px) {
+        #example1 {
+          padding: 25px;
+          background: url("https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg")
+            no-repeat;
+          background-size: cover;
+          height: 300px;
+        }
 
-</div>
+        .card {
+          width: 25rem !important;
+        }
 
+        .eleimage {
+          position: relative;
+          border: 1px solid black;
+          padding: 25px;
+          background: url("assest/images/elephants.png") no-repeat;
+          background-size: cover;
+          height: 400px;
+        }
 
-<div class="container-fluid-no-margin">
- 
+        .eleimagetext {
+          font-size: 30px;
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+    
+        .forestimg{
+          height: 325px;
+        } 
+      }
 
+      @media (min-width: 1200px) {
+        #example1 {
+          padding: 25px; /* This will override the 50px padding for larger screens */
+          background: url("https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg")
+            no-repeat;
+          background-size: cover;
+          height: 700px;
+        }
+
+        .eleimage {
+          position: relative;
+          border: 1px solid black;
+          padding: 25px;
+          background: url("assest/images/elephants.png") no-repeat;
+          background-size: cover;
+          height: 600px;
+        }
+
+        .eleimagetext {
+          font-size: 40px;
+        }
+     /*
+        .forestimg2{
+          height: 400px;
+        }
+
+        .forestimg{
+          height: 800px;
+        } */
+      }
+
+      @media (min-width: 2000px) {
+        #example1 {
+          padding: 25px; /* This will override the 50px padding for larger screens */
+          background: url("https://cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/03/img-79.jpg")
+            no-repeat;
+          background-size: cover;
+          height: 700px;
+        }
+
+        .eleimage {
+          position: relative;
+          padding: 25px;
+          background: url("assest/images/elephants.png") no-repeat;
+          background-size: cover;
+          height: 800px;
+        }
+      }
+
+      .eleimage::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.61); /* Adjust the overlay color and opacity here */
+      }
+
+      .container-fluid-no-margin {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .icon-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 300px !important;
+        color: white;
+        font-weight: 100;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        /* Style your icon here (size, color, etc.) */
+      }
+
+      .button {
+        color: antiquewhite;
+        background-color: rgba(1, 94, 63, 0.5);
+        border: none;
+        font-size: 20px;
+        padding: 20px 20px 20px 20px;
+        transition: 0.6s;
+      }
+
+      .button:hover {
+        color: antiquewhite;
+        background-color: rgb(1, 94, 63);
+        border: none;
+        font-size: 20px;
+        padding: 22px 22px 22px 22px;
+      }
+
+      p {
+        font-family: jost;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-family: jost;
+        font-size: 60px;
+      }
+
+      .card h2 {
+        font-family: jost;
+        font-weight: 200;
+      }
+
+      .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .icon {
+        margin-right: 10px; /* Adjust margin as needed */
+      }
+
+      /* card image hover effect*/
+
+      .card-item {
+        position: relative;
+        overflow: hidden; /* Ensure the overflow is hidden to contain the zoom effect */
+      }
+
+      .card-item .card-img-top {
+        transition: transform 0.5s ease; /* Add transition for smooth zoom effect */
+      }
+
+      .card-item:hover .card-img-top {
+        transform: scale(1.05); /* Increase the scale on hover */
+      }
+
+      /* learn more button css*/
+
+      .animated-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 16px 36px;
+        border: 4px solid;
+        border-color: transparent;
+        font-size: 16px;
+        background-color: white;
+        border-radius: 100px;
+        font-weight: 600;
+        color: #026b25;
+        box-shadow: 0 0 0 2px #ffffff;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .animated-button svg {
+        position: absolute;
+        width: 24px;
+        fill: #004d17;
+        z-index: 9;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .animated-button .arr-1 {
+        right: 16px;
+      }
+
+      .animated-button .arr-2 {
+        left: -25%;
+      }
+
+      .animated-button .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #ecf7f6;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .animated-button .text {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-12px);
+        transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .animated-button:hover {
+        box-shadow: 0 0 0 12px transparent;
+        color: #212121;
+        border-radius: 12px;
+      }
+
+      .animated-button:hover .arr-1 {
+        right: -25%;
+      }
+
+      .animated-button:hover .arr-2 {
+        left: 16px;
+      }
+
+      .animated-button:hover .text {
+        transform: translateX(12px);
+      }
+
+      .animated-button:hover svg {
+        fill: #004d0a;
+      }
+
+      .animated-button:active {
+        scale: 0.95;
+        box-shadow: 0 0 0 4px greenyellow;
+      }
+
+      .animated-button:hover .circle {
+        width: 220px;
+        height: 220px;
+        opacity: 1;
+      }
+    </style>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="owl-carousel owl-theme owl-carousel1">
+        <!-- Your carousel items will go here -->
+        <div class="item">
+          <img src="assest/images/img-75-683x1024.jpg" alt="Image 1" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-76-550x824.jpg" alt="Image 2" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-77-1-550x824.jpg" alt="Image 3" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-78-1-550x825.jpg" alt="Image 4" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-81.jpg" alt="Image 5" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-82-682x1024.jpg" alt="Image 6" />
+        </div>
+        <div class="item">
+          <img src="assest/images/img-84.jpg" alt="Image 7" />
+        </div>
+        <div class="item">
+          <img
+            src="assest/images/lisha-riabinina-stj-A6E6II8-unsplash-550x825.jpg"
+            alt="Image 8"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center">
+      <div id="example1">
+        <i class="far fa-play-circle icon-center"></i>
+      </div>
+
+      <div class="row mt-5 p-5">
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <p>ENJOY WORLD-CLASS STAY EXPERIENCE</p>
+          <h1>The Accommodations</h1>
+        </div>
+        <div class="col-md-3 col-sm-8 col-xs-12 text-center">
+          <button class="button">Discover All Suites</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 text-center">
+      <div class="owl-carousel owl-theme owl-carousel2">
+        <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto">
+          <img
+            class="card-img-top"
+            src="assest/images/room/20191019-160828-largejpg.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2>Premier Oceanview Villa</h2>
+            <p>
+              <span class="icon"
+                ><i class="fa fa-window-maximize" aria-hidden="true"></i> 84 m
+                <sup>2</sup>
+              </span>
+              <span class="icon"
+                ><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span
+              >
+              <span class="icon"
+                ><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span
+              >
+            </p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Learn More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto">
+          <img
+            class="card-img-top"
+            src="assest/images/room/hotel-wild-air (1).jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2>Premier Oceanview Villa</h2>
+            <p>
+              <span class="icon"
+                ><i class="fa fa-window-maximize" aria-hidden="true"></i> 84 m
+                <sup>2</sup>
+              </span>
+              <span class="icon"
+                ><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span
+              >
+              <span class="icon"
+                ><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span
+              >
+            </p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Learn More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto">
+          <img
+            class="card-img-top"
+            src="assest/images/room/hotel-wild-air (2).jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2>Premier Oceanview Villa</h2>
+            <p>
+              <span class="icon"
+                ><i class="fa fa-window-maximize" aria-hidden="true"></i> 84 m
+                <sup>2</sup>
+              </span>
+              <span class="icon"
+                ><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span
+              >
+              <span class="icon"
+                ><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span
+              >
+            </p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Learn More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card item card-item col-10 col-md-6 col-lg-4 mx-auto">
+          <img
+            class="card-img-top"
+            src="assest/images/room/hotel-wild-air (3).jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2>Premier Oceanview Villa</h2>
+            <p>
+              <span class="icon"
+                ><i class="fa fa-window-maximize" aria-hidden="true"></i> 84 m
+                <sup>2</sup>
+              </span>
+              <span class="icon"
+                ><i class="fa fa-user" aria-hidden="true"></i> 2 Guests</span
+              >
+              <span class="icon"
+                ><i class="fa fa-bed" aria-hidden="true"></i> 1 King Bed</span
+              >
+            </p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <button class="animated-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Learn More</span>
+              <span class="circle"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="arr-1"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid-no-margin">
       <div class="eleimage">
         <div class="h-100 d-flex align-items-center justify-content-center midcenter">
-       <h1 class="text-center eleimagetext" style="color: #ecf7f6; z-index: 4;" > “Everything here was great: the staff, the room layout, the property  amenities with indoor pool,  and the quality of the food. But the high point is  the view from the mountains.”</h1>
+          <h1
+            class="text-center eleimagetext"
+            style="color: #ecf7f6; z-index: 4"
+          >
+            “Everything here was great: the staff, the room layout, the property
+            amenities with indoor pool, and the quality of the food. But the
+            high point is the view from the mountains.”
+          </h1>
+        </div>
       </div>
-   </div>
+    </div-->
 
 
+
+
+
+
+
+
+
+<div class="container mt-5">
+
+<div class="row">
+
+
+  <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center align-items-center h-100">
+    <img class="forestimg" src="assest/images/hotel-wild-air (4).jpg">
+    <h3 class="mt-5" style="font-family: 'Brush Script MT', cursive; text-align: center;">Inspired by our history, surrounded by nature to offer a different experience</h3>
 </div>
 
 
-<div>
 
-<p> test </p>
-<p> test </p>
-<p> test </p>
-<p> test </p>
 
-<p> test </p>
-<p> test </p>
-<p> test </p>
-<p> test </p>
+  <div class="col-md-6 col-xs-12 d-flex flex-column justify-content-center align-items-center h-100">
+    <p class="text-center mt-3">DISCOVER THE SERVICES WE OFFERED</p>
+    <h1 class="text-center">All the Essentials for a Cozy and Comfortable Stay</h1>
 
+   
+
+
+    
+<div class="container py-5">
+  <div class="row text-center g-4">
+  
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+        <h5 class="mt-3">Airport Pick-up Service</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+   
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fas fa-house-user fa-2x"></i>
+        <h5 class="mt-3">Housekeeper Services</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+   
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fa fa-wifi fa-2x" aria-hidden="true"></i>
+        <h5 class="mt-3">Wifi & Internet</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fas fa-hands-wash fa-2x"></i>
+        <h5 class="mt-3">Laundry Services</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+ 
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fa fa-coffee fa-2x" aria-hidden="true"></i>
+        <h5 class="mt-3">Breakfast in Bed</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+   
+    <div class="col-md-4 col-sm-3 col-6">
+      <div>
+        <i class="fa fa-swimming-pool fa-2x" aria-hidden="true"></i> 
+        <h5 class="mt-3">Swimming Pool</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
 </div>
 
 
@@ -600,47 +729,46 @@ h1 {
 
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.owl-carousel1').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive:{
-      0:{
-        items: 2
-      },
-      600:{
-        items: 2
-      },
-      1000:{
-        items: 4
-      }
-    }
-  });
-  $('.owl-carousel2').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1200: {
-        items: 3
-      }
-    }
-  });
-});
 
 
-
-</script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel1").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 2,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+        $(".owl-carousel2").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
