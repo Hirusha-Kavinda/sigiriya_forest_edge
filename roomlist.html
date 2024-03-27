@@ -166,6 +166,19 @@ h1,h2 {
     font-weight: 600;
 }
 
+.position-relative {
+  overflow: hidden;
+}
+
+/* Image Zoom Effect */
+.position-relative img {
+  transition: transform 0.5s ease;
+}
+
+.position-relative:hover img {
+  transform: scale(1.1); /* Adjust scale value as needed */
+}
+
 
 @media (max-width: 767px) {
     .accommodation-desc p {
