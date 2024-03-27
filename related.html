@@ -33,7 +33,7 @@
         }
 
         .card-img-top {
-            height: 300px;
+            height: 350px;
         }
 
         .image-overlay {
@@ -126,112 +126,116 @@ button:after {
 
         @media (max-width: 767px) {
             .card-img-top {
-                height: 200px;
+                height: 260px;
             }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12 mt-2">
+
+    <div class="container mt-4">
+
+        <div class="owl-carousel owl-theme">
+            <!-- Card 1 -->
             <div class="card" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
                 <span class="badge badge-custom">FROM $599</span>
                 <div class="image-overlay">
                     <div class="text-container">
-                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        <button>
-                            View more
-                        </button>
+                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button>View more</button>
                     </div>
                 </div>
-
                 <div class="image-overlay2">
                     <div class="text-container">
                         <p class="main-text fw-bold">BED ROOM 1</p>
                         <p class="sub-text fw-bold">king size bed/wash room</p>
                     </div>
                 </div>
-
                 <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bd/0a/78/hotel-wild-air.jpg?w=1200&h=-1&s=1" alt="Card image cap">
             </div>
-        </div>
 
 
-
-        <div class="col-md-4 col-sm-4 col-xs-12 mt-2">
             <div class="card" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
                 <span class="badge badge-custom">FROM $599</span>
                 <div class="image-overlay">
                     <div class="text-container">
-                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        <button>
-                            View more
-                        </button>
+                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button>View more</button>
                     </div>
                 </div>
-
                 <div class="image-overlay2">
                     <div class="text-container">
                         <p class="main-text fw-bold">BED ROOM 1</p>
                         <p class="sub-text fw-bold">king size bed/wash room</p>
                     </div>
                 </div>
-
-                <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/bd/0a/78/hotel-wild-air.jpg?w=1200&h=-1&s=1" alt="Card image cap">
-            </div>
-        </div>
-
-
-
-        <div class="col-md-4 col-sm-4 col-xs-12 mt-2">
-            <div class="card" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
-                <span class="badge badge-custom">FROM $599</span>
-                <div class="image-overlay">
-                    <div class="text-container">
-                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                        <button>
-                            View more
-                        </button>
-                    </div>
-                </div>
-
-                <div class="image-overlay2">
-                    <div class="text-container">
-                        <p class="main-text fw-bold">BED ROOM 1</p>
-                        <p class="sub-text fw-bold">king size bed/wash room</p>
-                    </div>
-                </div>
-
                 <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/2d/4f/40/hotel-wild-air.jpg?w=1200&h=-1&s=1" alt="Card image cap">
             </div>
+
+
+            <div class="card" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
+                <span class="badge badge-custom">FROM $599</span>
+                <div class="image-overlay">
+                    <div class="text-container">
+                        <p class="sub-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button>View more</button>
+                    </div>
+                </div>
+                <div class="image-overlay2">
+                    <div class="text-container">
+                        <p class="main-text fw-bold">BED ROOM 1</p>
+                        <p class="sub-text fw-bold">king size bed/wash room</p>
+                    </div>
+                </div>
+                <img class="card-img-top" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/21/41/72/hotel-wild-air.jpg?w=1000&h=-1&s=1" alt="Card image cap">
+            </div>
         </div>
-
-        <!-- Add your other card elements here -->
-
     </div>
-</div>
 
-<script>
-   function showOverlay(element) {
-    var overlay = element.querySelector('.image-overlay');
-    var overlay2 = element.querySelector('.image-overlay2');
-    overlay.style.opacity = '1';
-    overlay.style.visibility = 'visible';
-    overlay2.style.opacity = '0';
-    overlay2.style.visibility = 'hidden';
-}
-
-function hideOverlay(element) {
-    var overlay = element.querySelector('.image-overlay');
-    var overlay2 = element.querySelector('.image-overlay2');
-    overlay.style.opacity = '0';
-    overlay.style.visibility = 'hidden';
-    overlay2.style.opacity = '1';
-    overlay2.style.visibility = 'visible';
-}
-</script>
+    <script>
+        function showOverlay(element) {
+            var overlay = element.querySelector('.image-overlay');
+            var overlay2 = element.querySelector('.image-overlay2');
+            overlay.style.opacity = '1';
+            overlay.style.visibility = 'visible';
+            overlay2.style.opacity = '0';
+            overlay2.style.visibility = 'hidden';
+        }
+    
+        function hideOverlay(element) {
+            var overlay = element.querySelector('.image-overlay');
+            var overlay2 = element.querySelector('.image-overlay2');
+            overlay.style.opacity = '0';
+            overlay.style.visibility = 'hidden';
+            overlay2.style.opacity = '1';
+            overlay2.style.visibility = 'visible';
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    
 
 </body>
 

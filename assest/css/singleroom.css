@@ -1,0 +1,209 @@
+body {
+    font-family: "Arial", sans-serif;
+  }
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .card-title {
+    font-size: 1rem;
+   
+  }
+  .card-subtitle {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .amenities i,
+  .amenities p {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  .amenities p {
+    margin-bottom: 0;
+  }
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+  }
+  .amenity-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(63, 39, 23, 0.363);
+  }
+  .amenity-item i {
+    font-size: 1.5rem;
+    color: #6c757d;
+    width: 30px;
+  }
+  .amenity-item p {
+    margin: 0;
+    margin-left: 15px;
+    color: #6c757d;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  p{
+    font-family: Copperplate;
+    font-size: 20px;
+  }
+
+  h1 , h2 , h3 ,h4 {
+    font-family: Serif;
+    color: rgba(70, 52, 35, 0.74);
+  }
+
+  /* Additional custom styles */
+
+  .quick-pay-container {
+max-width: 100%;
+height: 600px;
+padding: 0px;
+border-radius: 8px;
+background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/2d/4f/40/hotel-wild-air.jpg?w=1200&h=-1&s=1"); /* Add your image path here */
+background-size: cover; /* This will make sure that your image covers the whole container */
+background-position: center; /* This will center your image in the container */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.badge-custom {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: #e4e4e4; /* Custom badge color */
+        color: black;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+
+    .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 1.0s, visibility 1.0s;
+    }
+
+    .image-overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.185);
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        transition: opacity 0.4s, visibility 0.4s;
+    }
+
+
+    .text-container {
+        text-align: center;
+        color: white;
+    }
+
+    .main-text {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .sub-text {
+        font-size: 16px;
+    }
+
+
+    .relatedbtn {
+font-size: 18px;
+color: #e1e1e1;
+font-family: inherit;
+font-weight: 800;
+cursor: pointer;
+position: relative;
+border: none;
+background: none;
+text-transform: uppercase;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: color;
+}
+
+.relatedbtn:focus,
+.relatedbtn:hover {
+color: rgb(152, 245, 144);
+}
+
+.relatedbtn:focus:after,
+.relatedbtn:hover:after {
+width: 100%;
+left: 0%;
+}
+
+.relatedbtn:after {
+content: "";
+pointer-events: none;
+bottom: -2px;
+left: 50%;
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: #fff;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: width, left;
+}
+
+.btn-primary {
+    background-color: #6b5a36;
+    border: 0px;
+}
+
+
+.btn-primary:hover {
+    background-color: #55482b;
+    border: 0px;
+}
+
+
+@media (max-width: 767px) {
+
+.card-img-top {
+            height: 250px;
+        }
+
+
+.quick-pay-container {
+max-width: 100%;
+height: 300px;
+padding: 0px;
+border-radius: 3px;
+background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/2d/4f/40/hotel-wild-air.jpg?w=1200&h=-1&s=1"); /* Add your image path here */
+background-size: cover; /* This will make sure that your image covers the whole container */
+background-position: center; /* This will center your image in the container */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    font-family: Copperplate;
+    font-size: 15px;
+  }
+}
