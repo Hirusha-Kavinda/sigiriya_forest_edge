@@ -34,7 +34,27 @@
     /* Add your reset styles or include a CSS reset file */
 
 
+.dishes h1,h6,h2,p {
+  font-family: jost;
+}
 
+.dishes h2 {
+  color: #744530;
+}
+
+.dishes .btn-view {
+  color: #f8f9fa;
+  background-color: #976148;
+  width: 200px;
+}
+.dishes .btn-view:hover {
+  color: #f8f9fa;
+  background-color: #52372b;
+}
+
+.paragrph p {
+  font-size: 20px;
+}
 
     /* Additional CSS to style elements that Bootstrap does not cover */
 .text-container h6 {
@@ -50,17 +70,21 @@
 .text-container p {
   color: #495057; /* Slightly darker than default text */
 }
+.img-fluid{
+  max-width: 100%;
+  object-fit: cover;
+}
 
 .info-box h2 {
   font-size: 1.25rem; /* Larger than default but not too large */
-  color: #ff0000;
+  color: #0501f1f1;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .info-box p {
   margin-bottom: 0.25rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 .reservation {
@@ -72,26 +96,45 @@
 }
 
 .phone-number {
-  color: #ffffff !important; /* Bootstrap primary color */
+  color: #000000 !important; /* Bootstrap primary color */
   font-size: 1.25rem;
 }
 
 /* Bootstrap shadow utility */
 .info-box {
-  background-color: #000000cc !important;
+  background-color: #ffffff96 !important; /* Semi-transparent black */
   padding: 25px !important;
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 .bgimage{
-    background-image: url('https://beverlypress.com/wp-content/uploads/2023/05/Jill-RestaurantReviewUndertheStars.png'); /* Add your image path here */
+    background-image: url('file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/w-s-coda-e_Er_ak0jfM-unsplash.jpg'); /* Add your image path here */
         background-size: cover; /* This will make sure that your image covers the whole container */
         background-position: center; /* This will center your image in the container */
-        height: 500px;
+        height: 430px;
         position: relative; /* Needed for positioning the overlay */
         display: flex;
         justify-content: center;
         align-items: center;
 }
+
+
+.img1{  background-image: url('file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/louis-hansel-cH5IPjaAYyo-unsplash.jpg'); /* Add your image path here */
+        background-size: cover; /* This will make sure that your image covers the whole container */
+        background-position: center;
+        height: 500px; }
+
+.img2{ background-image: url('file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/keith-tanner-mZ7vLwoW_Wk-unsplash.jpg'); /* Add your image path here */
+        background-size: cover; /* This will make sure that your image covers the whole container */
+        background-position: center;
+        height: 500px;}
+        
+.img3{ background-image: url('file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/humphrey-muleba-rNJVp_g-t_o-unsplash.jpg'); /* Add your image path here */
+        background-size: cover; /* This will make sure that your image covers the whole container */
+        background-position: center;
+        height: 500px;}
 
 body {
   font-family: 'Your Font Family', sans-serif; /* Replace with your font family */
@@ -99,15 +142,13 @@ body {
   color: #333; /* Adjust font color as needed */
 }
 
-h1, h2, h4 {
-  font-family: 'Your Font Family', sans-serif; /* Replace with your font family */
-}
 
 .menu-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
   border-bottom: 1px solid #ccc; /* Add a border bottom with a light color */
+  margin-top: 3rem;
 }
 .item-name {
   font-weight: bold;
@@ -152,6 +193,29 @@ h1, h2, h4 {
   .info-box {
     margin-top: 2rem; /* Add space between sections on small screens */
   }
+
+  .text-container h1 {
+  font-weight: 800; /* Making the title bolder */
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.paragrph p {
+  font-size: 14px;
+}
+
+.img1{
+  height: 200px;
+}
+.img2{
+  height: 200px;
+}
+
+.img3{
+  height: 200px;
+}
+
+
 }
 
 /* Add responsive styles as needed */
@@ -185,12 +249,12 @@ h1, h2, h4 {
 
 
 
-<section class="container-fluid">
-    <div class="row align-items-center">
+<section class="container-fluid paragrph">
+    <div class="row align-items-center text-center">
       <!-- Content Section -->
       <div class="col-lg-8">
         <div class="text-container">
-          <h6 class="text-uppercase text-muted">Fine Dining Experiences</h6>
+          <h6 class="text-uppercase text-muted mt-3">Fine Dining Experiences</h6>
           <h1 class="display-3">Indulge Your Senses and Discover New Flavors</h1>
           <p class="mb-4 ">We are committed to create wonderful memories for all guests with every stay. Carefully curated menus incorporate locally sourced ingredients into exquisite dishes that reflect the locals and the world around them. Wherever you are in the world, we’ll take your taste buds on a journey they’ll never forget. Authentic flavors and culinary skills combine to create an unforgettable dining experience. 
 
@@ -224,17 +288,11 @@ h1, h2, h4 {
 
 
 <section>
-<div class="container-fluid py-5">
+<div class="container-fluid">
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img src="file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/louis-hansel-cH5IPjaAYyo-unsplash.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <img src="file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/keith-tanner-mZ7vLwoW_Wk-unsplash.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <img src="file:///C:/Users/user/Desktop/sigiriya/cozystay.loftocean.com/island-resort/wp-content/uploads/sites/3/2023/05/humphrey-muleba-rNJVp_g-t_o-unsplash.jpg" class="img-fluid" alt="Responsive image">
-      </div>
+      <div class="col-md-4 col-sm-12 img1"></div>
+      <div class="col-md-4 col-sm-12 img2"></div>
+      <div class="col-md-4 col-sm-12 img3"></div>
     </div>
   </div>
 
@@ -242,38 +300,68 @@ h1, h2, h4 {
 
 
 
-<section>
-  <div class="container text-center my-5">
+<section class="dishes">
+  <div class="container text-center mt-5">
     <div class="row">
       <div class="col">
-        <h4>CHECK OUR TOP RATED DISHES</h4>
-        <h1 class="mb-5">Selected Menus</h1>
+        <h6>CHECK OUR TOP RATED DISHES</h6>
+        <h1 class="mb-3">Selected Menus</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 p-4">
         <h2>STARTERS</h2>
         <p class="menu-item"><span class="item-name">Purple Corn Tostada</span> <span class="price">$36</span></p>
         <p class="menu-item"><span class="item-name">Purple Corn Tostada</span> <span class="price">$36</span></p>
         <p class="menu-item"><span class="item-name">Purple Corn Tostada</span> <span class="price">$36</span></p>
+        <p class="menu-item"><span class="item-name">Purple Corn Tostada</span> <span class="price">$36</span></p>
+  
         <!-- Additional menu items here -->
         
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 p-4">
         <h2>MAIN DISHES</h2>
         <p class="menu-item"><span class="item-name">Crispy Skin Chicken</span> <span class="price">$33</span></p>
+        <p class="menu-item"><span class="item-name">Crispy Skin Chicken</span> <span class="price">$33</span></p>
+        <p class="menu-item"><span class="item-name">Crispy Skin Chicken</span> <span class="price">$33</span></p>
+        <p class="menu-item"><span class="item-name">Crispy Skin Chicken</span> <span class="price">$33</span></p>
         <!-- Additional menu items here -->
-        <button type="button" class="btn btn-outline-secondary mt-4">View The Full Menu</button>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 p-4">
         <h2>DESSERTS</h2>
+        <p class="menu-item"><span class="item-name">Salted Caramel Tart</span> <span class="price">$16</span></p>
+        <p class="menu-item"><span class="item-name">Salted Caramel Tart</span> <span class="price">$16</span></p>
+        <p class="menu-item"><span class="item-name">Salted Caramel Tart</span> <span class="price">$16</span></p>
         <p class="menu-item"><span class="item-name">Salted Caramel Tart</span> <span class="price">$16</span></p>
         <!-- Additional menu items here -->
       </div>
     </div>
   </div>
-  
+
+<div class="row justify-content-center align-items-center">
+  <button type="button" class="btn btn-view mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">View The Full Menu</button>
+</div> 
 </section> 
+
+
+
+
+<section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+           <img src="assest/images/Menu Page – CozyStay Island Resort - Google Chrome 3_28_2024 9_28_29 AM.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

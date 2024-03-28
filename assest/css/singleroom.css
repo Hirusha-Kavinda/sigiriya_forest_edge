@@ -183,6 +183,10 @@ transition-property: width, left;
     border: 0px;
 }
 
+.fas,.amenity-item .fas {
+  color: rgb(124, 70, 20);
+}
+
 
 @media (max-width: 767px) {
 
